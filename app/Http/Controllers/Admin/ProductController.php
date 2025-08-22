@@ -39,7 +39,6 @@ class ProductController extends Controller implements HasMiddleware
             'stock' => 'required|integer|min:0',
             'category' => 'required|string|max:255',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-            'is_active' => 'boolean'
         ]);
 
         $data = $request->all();
@@ -73,7 +72,6 @@ class ProductController extends Controller implements HasMiddleware
             'stock' => 'required|integer|min:0',
             'category' => 'required|string|max:255',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-            'is_active' => 'boolean'
         ]);
 
         $data = $request->all();

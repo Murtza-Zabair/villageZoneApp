@@ -12,8 +12,7 @@ class Order extends Model
     protected $guarded = [];
 
     protected $casts = [
-        'total_amount' => 'decimal:2',
-        'shipping_address' => 'array'
+        'total_amount' => 'decimal:2'
     ];
 
     public function user()
@@ -24,5 +23,21 @@ class Order extends Model
     public function orderItems()
     {
         return $this->hasMany(OrderItem::class);
+    }
+
+    public function getStatusColorAttribute()
+    {
+        return match ($this->status) {
+            'pending' => 'yellow',
+            'confirmed' => 'blue',
+            'delivered' => 'green',
+            'cancelled' => 'red',
+            default => 'gray'
+        };
+    }
+
+    public function getStatusLabelAttribute()
+    {
+        return ucfirst($this->status);
     }
 }

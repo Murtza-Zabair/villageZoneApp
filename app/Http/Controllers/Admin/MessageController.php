@@ -26,11 +26,6 @@ class MessageController extends Controller implements HasMiddleware
 
     public function show(Message $message)
     {
-        // Mark message as read if it hasn't been read yet
-        if (!$message->is_read) {
-            $message->update(['is_read' => true]);
-        }
-
         return view('admin.messages.show', compact('message'));
     }
 
@@ -42,21 +37,4 @@ class MessageController extends Controller implements HasMiddleware
             ->with('success', 'Message deleted successfully.');
     }
 
-    public function reply(Request $request, Message $message)
-    {
-        $request->validate([
-            'reply' => 'required|string'
-        ]);
-
-        // You might want to send an email or store the reply
-        // This is just a basic implementation
-        $message->update([
-            'admin_reply' => $request->reply,
-            'replied_at' => now(),
-            'is_read' => true
-        ]);
-
-        return redirect()->route('admin.messages.show', $message)
-            ->with('success', 'Reply sent successfully.');
-    }
 }

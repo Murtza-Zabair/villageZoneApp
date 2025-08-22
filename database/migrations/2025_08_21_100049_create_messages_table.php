@@ -18,8 +18,6 @@ return new class extends Migration
             $table->string('email');
             $table->string('subject');
             $table->text('message');
-            $table->enum('status', ['unread', 'read', 'replied'])->default('unread');
-            $table->text('admin_reply')->nullable();
             $table->timestamps();
         });    }
 

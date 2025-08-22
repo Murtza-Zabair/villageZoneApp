@@ -38,7 +38,7 @@
                                         {{ $order->user->name }}
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                        ${{ number_format($order->total_amount, 2) }}
+                                        Rs {{ number_format($order->total_amount, 2) }}
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap">
                                         <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full 

@@ -9,12 +9,7 @@ class OrderItem extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'order_id',
-        'product_id',
-        'quantity',
-        'price'
-    ];
+    protected $guarded = [];
 
     protected $casts = [
         'price' => 'decimal:2'
@@ -28,5 +23,10 @@ class OrderItem extends Model
     public function product()
     {
         return $this->belongsTo(Product::class);
+    }
+
+    public function getTotalAttribute()
+    {
+        return $this->price * $this->quantity;
     }
 }
