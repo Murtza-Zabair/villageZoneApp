@@ -1,6 +1,6 @@
 @extends('web.layout')
 
-@section('title', 'Contact Us - AgriConnect')
+@section('title', 'Contact Us - Village Zone')
 
 @section('content')
     <!-- Page Header -->
@@ -37,8 +37,8 @@
             </div>
             <h3 class="text-lg font-semibold text-gray-800 mb-2">Email Us</h3>
             <p class="text-gray-600 mb-3">We'll respond within 24 hours</p>
-            <a href="mailto:info@agriconnect.com" class="text-blue-600 font-semibold hover:text-blue-700">
-                info@agriconnect.com
+            <a href="mailto:info@Village Zone.com" class="text-blue-600 font-semibold hover:text-blue-700">
+                info@Village Zone.com
             </a>
         </div>
 

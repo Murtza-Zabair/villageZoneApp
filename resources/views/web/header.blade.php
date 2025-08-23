@@ -1,11 +1,10 @@
-
 <header class="bg-green-600 shadow-lg">
     <nav class="container mx-auto px-4 py-3">
         <div class="flex items-center justify-between">
             <div class="flex items-center space-x-4">
                 <a href="{{ route('home') }}" class="text-white text-2xl font-bold flex items-center">
                     <i class="fas fa-seedling mr-2"></i>
-                    AgriConnect
+                    Village Zone
                 </a>
             </div>
 

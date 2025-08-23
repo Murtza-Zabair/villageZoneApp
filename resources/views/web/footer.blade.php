@@ -4,7 +4,7 @@
             <div>
                 <h5 class="text-xl font-bold mb-4 flex items-center">
                     <i class="fas fa-seedling mr-2"></i>
-                    AgriConnect
+                    Village Zone
                 </h5>
                 <p class="text-green-100">
                     Your trusted partner in agricultural excellence. Connecting farmers with quality products and
@@ -57,7 +57,7 @@
                 </div>
                 <p class="text-green-100">
                     <i class="fas fa-envelope mr-2"></i>
-                    info@agriconnect.com
+                    info@Village Zone.com
                 </p>
                 <p class="text-green-100">
                     <i class="fas fa-phone mr-2"></i>
@@ -68,15 +68,15 @@
 
         <hr class="border-green-500 my-6">
 
-        <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="flex flex-col md:flex-row justify-center items-center">
             <p class="text-green-100 mb-4 md:mb-0">
-                &copy; 2024 AgriConnect. All rights reserved.
+                &copy; 2024 Village Zone. All rights reserved.
             </p>
-            <div class="flex space-x-4">
+            {{-- <div class="flex space-x-4">
                 <a href="#" class="text-green-100 hover:text-white transition-colors">Privacy Policy</a>
                 <a href="#" class="text-green-100 hover:text-white transition-colors">Terms of Service</a>
                 <a href="#" class="text-green-100 hover:text-white transition-colors">Cookie Policy</a>
-            </div>
+            </div> --}}
         </div>
     </div>
 </footer>

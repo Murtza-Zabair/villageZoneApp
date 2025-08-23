@@ -1,7 +1,7 @@
 @extends('web.layout')
 
 
-@section('title', 'Home - AgriConnect')
+@section('title', 'Home - Village Zone')
 
 @section('content')
     <!-- Hero Section -->
@@ -9,7 +9,7 @@
         <div class="px-8 py-16 md:py-24">
             <div class="max-w-4xl mx-auto text-center">
                 <h1 class="text-4xl md:text-6xl font-bold mb-6">
-                    Welcome to <span class="text-green-200">AgriConnect</span>
+                    Welcome to <span class="text-green-200">Village Zone</span>
                 </h1>
                 <p class="text-xl md:text-2xl mb-8 text-green-100">
                     Your trusted partner in agricultural excellence. Connecting farmers with quality products, expert
@@ -35,7 +35,7 @@
     <div class="mb-16">
         <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-                Why Choose AgriConnect?
+                Why Choose Village Zone?
             </h2>
             <p class="text-lg text-gray-600 max-w-2xl mx-auto">
                 We provide comprehensive solutions for modern farming challenges
@@ -172,14 +172,14 @@
             Ready to Get Started?
         </h2>
         <p class="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
-            Join thousands of farmers who trust AgriConnect for their agricultural needs.
+            Join thousands of farmers who trust Village Zone for their agricultural needs.
             Get access to quality products, expert advice, and healthcare support.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
             @guest
                 <a href="{{ route('register') }}"
                     class="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
-                    Join AgriConnect Today
+                    Join Village Zone Today
                 </a>
             @endguest
             <a href="{{ route('contact') }}"

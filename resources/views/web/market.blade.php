@@ -1,6 +1,6 @@
 @extends('web.layout')
 
-@section('title', 'Market - AgriConnect')
+@section('title', 'Market - Village Zone')
 
 @section('content')
     <!-- Page Header -->
