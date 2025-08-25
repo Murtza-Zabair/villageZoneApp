@@ -1,6 +1,6 @@
 @extends('web.layout')
 
-@section('title', $product->name . ' - AgriConnect')
+@section('title', $product->name . ' - Village Zone')
 
 @section('content')
 <!-- Simple Breadcrumb -->
