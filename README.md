@@ -12,10 +12,10 @@ The platform includes a **user-friendly frontend** for customers and a **secure 
 - Built with **Laravel Breeze**.
 - Role-based access: **Admin** and **User**.
 
-### 🛒 User Side
-- Home page, Farming Tips, Healthcare, Market, Portfolio, and Contact Us.
+### User Side
+- Home page, Farming Tips, Healthcare, Market, and Contact Us.
 - Browse products, add to cart, and checkout.
-- Manage personal profile and view order history.
+- Edit personal profile and view order history.
 - Send inquiries via contact form.
 
 ### Admin Panel
@@ -43,7 +43,7 @@ The platform includes a **user-friendly frontend** for customers and a **secure 
 
 ## Tech Stack
 
-- **Backend:** Laravel 11 (MVC Architecture)  
+- **Backend:** Laravel 12 (MVC Architecture)  
 - **Frontend:** Blade Templates  
 - **Authentication:** Laravel Breeze  
 - **Database:** MySQL  
@@ -55,5 +55,5 @@ The platform includes a **user-friendly frontend** for customers and a **secure 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/villagezone.git
-   cd villagezone
+   git clone https://github.com/your-username/villageZoneApp.git
+   cd villageZoneApp
